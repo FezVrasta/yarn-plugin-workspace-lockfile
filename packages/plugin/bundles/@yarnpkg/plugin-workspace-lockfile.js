@@ -64,7 +64,7 @@ const createLockfile = async (configuration, {
   });
 
   for (const w of project.workspaces) {
-    const pkg = Array.from(project.originalPackages.values()).find(p => p.identHash === w.locator.identHash);
+    const pkg = Array.from(project.originalPackages.values()).find(p => p.identHash === w.anchoredLocator.identHash);
 
     if (pkg === null || pkg === void 0 ? void 0 : pkg.reference.startsWith("workspace:")) {
       // ensure we replace the path in the lockfile from `workspace:packages/somepath` to `workspace:.`
