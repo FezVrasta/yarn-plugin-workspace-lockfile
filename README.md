@@ -2,6 +2,9 @@
 
 **EXPERIMENTAL!**
 
+> [!NOTE]
+> This work adds support for Yarn 4.x
+
 ## Usage:
 
 ```
